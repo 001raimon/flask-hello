@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flask Hello</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
+  <div class="card">
     <h1>Hello World</h1>
-    <button type="button" onclick="call('/api/hi')">Say Hi</button>
-    <button type="button" onclick="call('/api/time')">Get Time</button>
-    <button type="button" onclick="call('/api/count')">Count</button>
+    <div class="actions">
+      <button type="button" onclick="call('/api/hi')">Say Hi</button>
+      <button type="button" onclick="call('/api/time')">Get Time</button>
+      <button type="button" onclick="call('/api/count')">Count</button>
+    </div>
     <div id="output"></div>
+  </div>
     <script>
       async function call(url) {
         const res = await fetch(url);
