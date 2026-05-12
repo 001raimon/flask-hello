@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Hello</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <button type="button" onclick="call('/api/hi')">Say Hi</button>
+    <button type="button" onclick="call('/api/time')">Get Time</button>
+    <button type="button" onclick="call('/api/count')">Count</button>
+    <div id="output"></div>
+    <script>
+      async function call(url) {
+        const res = await fetch(url);
+        const data = await res.json();
+        document.getElementById('output').textContent = JSON.stringify(data);
+      }
+    </script>
+</body>
+</html>
