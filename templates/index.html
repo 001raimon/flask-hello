@@ -14,7 +14,7 @@
       <button type="button" onclick="call('/api/time')">Get Time</button>
       <button type="button" onclick="call('/api/count')">Count</button>
     </div>
-    <div id="output"></div>
+    <div id="output" aria-live="polite"></div>
   </div>
     <script>
       async function call(url) {

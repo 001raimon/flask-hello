@@ -51,6 +51,11 @@ button:hover {
   background: #3a58e0;
 }
 
+button:focus-visible {
+  outline: 3px solid #4f6ef7;
+  outline-offset: 2px;
+}
+
 #output {
   min-height: 2.5rem;
   background: #f6f8fa;
