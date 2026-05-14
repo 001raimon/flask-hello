@@ -1,0 +1,8 @@
+<type>: <subject under 72 chars, imperative mood>
+
+# Why this change (optional, wrap at 72)
+#
+# What changed:
+# -
+#
+# Closes #
