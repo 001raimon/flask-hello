@@ -1,0 +1,6 @@
+[
+  {"query": "lint the code before I commit", "should_trigger": true},
+  {"query": "check my python", "should_trigger": true},
+  {"query": "what's the weather", "should_trigger": false},
+  {"query": "deploy to production", "should_trigger": false}
+]
